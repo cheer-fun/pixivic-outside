@@ -6,7 +6,7 @@ export default function Tag({ name }) {
       <div
         className={classes.tag}
         onClick={() => { window.open(`https://sharemoe.net/keywords?tag=${name}`); }}>
-        <span>{name}</span>
+        {name}
       </div>
     );
 }

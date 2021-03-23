@@ -62,8 +62,8 @@ export default function SimpleSlider() {
                 avatar={picData?.artistPreView?.avatar} />
               <ul className={classes.tagList}>
                 {picData?.tags?.map((item) => (
-                  <li className={classes.middle} key={item.name}>
-                    <Tag name={item.name} />
+                  <li className={classes.middle} key={item.id}>
+                    <Tag name={item.translatedName} />
                   </li>
             ))}
               </ul>

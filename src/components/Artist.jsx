@@ -6,7 +6,7 @@ export default function Artist({ id, name, avatar }) {
         return (
           <div
             className={classes.avatarLine}
-            onClick={() => window.open(`https://www.sharemoe.net/artist/${id}`)}>
+            onClick={() => window.open(`https://sharemoe.net/artist/${id}`)}>
             <div
               style={{ backgroundImage: `url(${replaceSmallImg(avatar)})` }}
               className={classes.avatarImg} />

@@ -8,7 +8,7 @@ export default function Artist({ id, name, avatar }) {
             className={classes.avatarLine}
             onClick={() => window.open(`https://sharemoe.net/artist/${id}`)}>
             <div
-              style={{ backgroundImage: `url(${replaceSmallImg(avatar)})` }}
+              style={{ background: `center / contain no-repeat url(${replaceSmallImg(avatar)})` }}
               className={classes.avatarImg} />
             <span className={classes.avatarName}>{name}</span>
           </div>

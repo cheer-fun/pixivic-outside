@@ -41,7 +41,8 @@ export default function SimpleSlider() {
             {/* eslint-disable-next-line react/jsx-props-no-spreading */}
             <Slider {...settings} className={classes.slickWarp}>
               {/* eslint-disable-next-line react/jsx-props-no-spreading */}
-              {data.data.map((d) => (<Card key={d.id} imagesUrl={d?.imageUrls[0]?.medium} />))}
+              {data.data.map((d) => (
+                <Card key={d.id} imagesUrl={d?.imageUrls[0]?.medium} />))}
             </Slider>
 
             <div
@@ -61,11 +62,7 @@ export default function SimpleSlider() {
                 name={picData?.artistPreView?.name}
                 avatar={picData?.artistPreView?.avatar} />
               <ul className={classes.tagList}>
-                {picData?.tags?.map((item) => (
-                  <li className={classes.middle} key={item.id}>
-                    <Tag name={item.translatedName} />
-                  </li>
-            ))}
+                {picData?.tags?.map((item) => (item?.translatedName ? (<li className={classes.middle} key={item.id}><Tag name={item.translatedName} /></li>) : null))}
               </ul>
             </div>
           </div>

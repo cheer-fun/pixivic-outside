@@ -2,13 +2,6 @@
   height: 100%;
   width: 100%;
   min-height: 10rem;
-  /*position: relative;*/
-  /*object-fit: cover;*/
-  /*object-position: top;*/
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
 }
 
 .cardHeader {
@@ -64,6 +57,7 @@
   min-width: 1.6rem;
   height: 1.6rem;
   width: 1.6rem;
+  object-fit: fill;
 }
 
 .avatarName {

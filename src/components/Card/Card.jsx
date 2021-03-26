@@ -6,7 +6,7 @@ import classes from './card.css';
 export default function Card({ imagesUrl }) {
   return (
     <div
-      style={{ background: `center / contain no-repeat url(${replaceSmallImg(imagesUrl)})` }}
+      style={{ backgroundImage: `url(${replaceSmallImg(imagesUrl)})` }}
       className={classnames(classes.cardLayout)} />
   );
 }

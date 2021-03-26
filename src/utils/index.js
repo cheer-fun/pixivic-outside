@@ -14,4 +14,4 @@ const requestMap = {
     wallpaper: 'pcWallpaper',
 };
 
-export const getRequestURL = `https://open.pixivic.net/modes/${requestMap[getQueryString('mode')] || 'rank'}?pageIndex=1`;
+export const getRequestURL = `https://open.pixivic.net/modes/${requestMap[getQueryString('mode')] || 'rank'}`;

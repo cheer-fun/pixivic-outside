@@ -39,7 +39,7 @@ export default function SimpleSlider() {
             onMouseOver={() => { setOn(true); }}
             onMouseOut={() => { setOn(false); }}>
             {/* eslint-disable-next-line react/jsx-props-no-spreading */}
-            <Slider {...settings} className={classes.slickWarp}>
+            <Slider {...settings} className={classes.sliderWarp}>
               {/* eslint-disable-next-line react/jsx-props-no-spreading */}
               {data.data.map((d) => (
                 <Card key={d.id} imagesUrl={d?.imageUrls[0]?.medium} />))}

@@ -1,0 +1,138 @@
+.cardLayout {
+  width: 100%;
+  height: 100%;
+  min-height: 60vh;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.sliderWarp{
+  min-height: 60vh;
+}
+.cardHeader {
+  position: absolute;
+  border: none;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  background-color: rgba(31, 45, 61, 0.11);
+  color: #282c34;
+  z-index: 10;
+  top: 0;
+  height: 2rem;
+  width: 100%;
+  background-size: 100%;
+  font-size: 1rem;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-shadow: #fff 1px 0 0, #fff 0 1px 0, #fff -1px 0 0, #fff 0 -1px 0;
+  transition: opacity 0.3s;
+  border-radius: 0.4rem;
+}
+
+.cardFooter {
+  box-sizing: border-box;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: none;
+  outline: none;
+  margin: 0;
+  color: #282c34;
+  text-align: center;
+  font-size: 1rem;
+  bottom: 0;
+  height: 2rem;
+  transform: translate(0);
+  padding: 0.2rem;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  transition: opacity 0.3s, background-color 0.3s ease, transform 0.3s;
+  border-radius: 0.5rem;
+}
+.avatarImg {
+  background: bisque;
+  border-radius: 50%;
+  box-sizing: border-box;
+  min-height: 1.6rem;
+  min-width: 1.6rem;
+  height: 1.6rem;
+  width: 1.6rem;
+  object-fit: fill;
+}
+
+.avatarName {
+  margin-left: 1rem;
+  font-weight: bold;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  background-color: rgba(245, 245, 245, 0.47);
+  color: #ffffff;
+  border-radius: 0.2rem;
+  width: 100%;
+}
+
+.avatarLine {
+  display: flex;
+  width: 40%;
+  align-items: center;
+  padding: 0.2rem 0.5rem;
+}
+
+.tag {
+  color: rgba(0, 0, 0, 0.87);
+  display: inline-flex;
+  font-size: 0.8125rem;
+  align-items: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  justify-content: center;
+  text-decoration: none;
+  background-color: #fff;
+  min-width: 4rem;
+  height: 1.2rem;
+  border-radius: 1rem;
+  margin-right: 0.5rem;
+  cursor: pointer;
+  padding: 0 0.2rem;
+  overflow: hidden;
+  text-decoration: left;
+}
+
+.tagList {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  margin: 0;
+  margin-left: 0.5rem;
+  width: 100%;
+}
+.middle {
+  display: flex;
+  align-items: center;
+}
+
+.slickWarp {
+  width: 100%;
+  position: relative;
+}
+.slickWarp :global(.slick-prev) {
+  height: 100%;
+  width: 3rem;
+  left: 0.1rem;
+  z-index: 1;
+  color: #eee;
+}
+
+.slickWarp :global(.slick-next) {
+  height: 100%;
+  width: 3rem;
+  right: 0.1rem;
+  z-index: 1;
+  color: #eee;
+}

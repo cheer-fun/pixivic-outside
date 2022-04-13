@@ -5,8 +5,8 @@ import classes from './Card/card.css';
 export default function Artist({ id, name, avatar }) {
         return (
           <div
-            className={classes.avatarLine}
-            onClick={() => window.open(`https://sharemoe.net/artist/${id}`)}>
+            className={classes.avatarLine} 
+            onClick={() => window.open(`https://pixivic.com/artist/${id}`)}>
             <div
               style={{ background: `center / contain no-repeat url(${replaceSmallImg(avatar)})` }}
               className={classes.avatarImg} />

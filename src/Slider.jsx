@@ -50,7 +50,7 @@ export default function SimpleSlider() {
         className={classes.cardHeader}
         style={{ opacity: on ? 100 : 0 }}>
         <span 
-          onClick={() => { window.open(`https://sharemoe.net/illusts/${picData.id}`); }}
+          onClick={() => { window.open(`https://pixivic.com/illusts/${picData.id}`); }}
           style={{ cursor: 'pointer' }}>
           {picData && picData.title}
         </span>
@@ -59,9 +59,9 @@ export default function SimpleSlider() {
         className={classes.cardFooter}
         style={{ opacity: on ? 100 : 0 }}>
         <Artist 
-          id={picData?.artistPreView.id}
-          name={picData?.artistPreView.name} 
-          avatar={picData?.artistPreView.avatar} />
+          id={picData?.artistPreView?.id}
+          name={picData?.artistPreView?.name} 
+          avatar={picData?.artistPreView?.avatar} />
         <ul className={classes.tagList}>
           {picData?.tags?.map((item) => (
             <li className={classes.middle} key={item.name}>

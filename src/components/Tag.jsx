@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from '../card.css';
+import classes from './Card/card.css';
 
 export default function Tag({ name }) {
     return (
